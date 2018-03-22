@@ -136,8 +136,6 @@ class App extends Component {
                 <div>
                     {navbar}
                 </div>
-                <br/>
-                <br/>
                 <div className="container-fluid scroll">
                     {main}
                 </div>

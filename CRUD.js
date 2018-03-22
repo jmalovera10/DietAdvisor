@@ -19,7 +19,7 @@ exports.insertWeight = function (db, callback, userId, weight) {
             todate = todate / 3600000;
             if (dates && dates.length > 0) {
                 let date = dates[dates.length - 1];
-                if (todate - date < 20) {
+                if (todate - date < 8) {
                     weights.pop();
                     weights.push(weight);
                     dates.pop();
