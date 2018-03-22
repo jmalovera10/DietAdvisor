@@ -9,7 +9,7 @@ export default class StatsChart extends Component{
                 <LineChart width={900} height={600} data={this.props.data}
                            margin={{top: 5, right: 30, left: 20, bottom: 5}}>
                     <XAxis dataKey="name"/>
-                    <YAxis/>
+                    <YAxis orientation="left" domain={["dataMin", "dataMax"]}/>
                     <CartesianGrid strokeDasharray="3 3"/>
                     <Tooltip/>
                     <Legend />
