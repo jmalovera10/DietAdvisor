@@ -1,14 +1,18 @@
 import React, { Component } from 'react';
+import Moment from 'react-moment';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend} from 'recharts';
 
 /**Component that contains the chart*/
 export default class StatsChart extends Component{
     render() {
+        function formatXAxis(tickItem) {
+            return <Moment>{tickItem}</Moment>
+        }
         return (
             <div className="row justify-content-around center-items chart-content">
                 <LineChart width={900} height={500} data={this.props.data}
                            margin={{top: 5, right: 30, left: 20, bottom: 5}}>
-                    <XAxis dataKey="name" domain={["dataMin", "dataMax"]}/>
+                    <XAxis  dataKey="x" tickFormatter={formatXAxis}/>
                     <YAxis orientation="left" domain={["dataMin", "dataMax"]}/>
                     <CartesianGrid strokeDasharray="3 3"/>
                     <Tooltip/>

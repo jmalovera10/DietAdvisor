@@ -37,7 +37,7 @@ export default class Stats extends Component{
                     let date = new Date(user[0].dates[i]*1000*60*60);
                     let format = ""+date.getDate().toString()+"/"+(date.getMonth()+1).toString()+"/"
                         +date.getFullYear().toString().replace("20","");
-                    let wei = { name: date, weight: w};
+                    let wei = { x: date, weight: w};
                     let currState = this.state.data.slice();
                     this.setState({
                         data: currState.concat(wei)

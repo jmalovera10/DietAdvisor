@@ -30,12 +30,14 @@
   },
   "homepage": "https://github.com/jmalovera10/WebDevProject2#readme",
   "dependencies": {
+    "base-64": "^0.1.0",
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
+    "moment": "^2.22.1",
     "mongodb": "^3.0.2",
+    "mysql": "^2.15.0",
+    "react-moment": "^0.7.0",
     "request": "^2.83.0",
-    "utf8": "^3.0.0",
-    "base-64": "^0.1.0",
-    "mysql": "^2.15.0"
+    "utf8": "^3.0.0"
   }
 }
