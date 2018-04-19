@@ -6,7 +6,7 @@ import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend} from 're
 export default class StatsChart extends Component{
     render() {
         function formatXAxis(tickItem) {
-            return moment(tickItem).format('MMM Do YY')
+            return moment(tickItem).format('DD/MM/YY')
         }
         return (
             <div className="row justify-content-around center-items chart-content">
