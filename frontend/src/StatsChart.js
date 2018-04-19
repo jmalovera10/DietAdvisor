@@ -6,9 +6,9 @@ export default class StatsChart extends Component{
     render() {
         return (
             <div className="row justify-content-around center-items chart-content">
-                <LineChart width={900} height={600} data={this.props.data}
+                <LineChart width={900} height={500} data={this.props.data}
                            margin={{top: 5, right: 30, left: 20, bottom: 5}}>
-                    <XAxis  domain={["dataMin", "dataMax"]}/>
+                    <XAxis />
                     <YAxis orientation="left" domain={["dataMin", "dataMax"]}/>
                     <CartesianGrid strokeDasharray="3 3"/>
                     <Tooltip/>
