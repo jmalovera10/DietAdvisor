@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import Moment from 'react-moment';
+import moment from 'moment';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend} from 'recharts';
 
 /**Component that contains the chart*/
 export default class StatsChart extends Component{
     render() {
         function formatXAxis(tickItem) {
-            return <Moment>{tickItem}</Moment>
+            return moment(tickItem).format('MMM Do YY')
         }
         return (
             <div className="row justify-content-around center-items chart-content">
