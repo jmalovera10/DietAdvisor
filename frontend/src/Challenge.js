@@ -4,7 +4,7 @@ import SearchBar from "./SearchBar";
 import WeightModal from "./WeightModal";
 import CardContainer from "./CardContainer";
 import NewDayModal from "./NewDayModal";
-
+//Es buena práctica estructurar el proyecto con directorios
 /**
  * This class contains all the components needed to display the challenge page
  */
