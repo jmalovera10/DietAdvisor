@@ -10,6 +10,8 @@ const bodyParser = require("body-parser");
 const utf8 = require("utf8");
 const base64 = require("base-64");
 
+//Sería conveniente en caso de querer extender la aplicación, tener un código más modularizado.
+//Por ejemplo utilizar un solo archivo para crear el servidor y nuevos archivos para cada tipo de servicio que el servidor ofrezca  
 
 // Connection URL
 const DBurl = process.env.MONGODB_URI;
